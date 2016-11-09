@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/funnel-input_base_path-SV2ZcxGb.tmp/0/routes/hotel-select.js

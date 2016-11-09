@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="thumbnail titulo-hotel-selecionado">
+    <img class="img-responsive" src={{model.[0].links.thumbnailImage.href}} alt="">
+    <div class="caption-full">
+      <h4 class="pull-right"></h4>
+      <h4><a href="#">{{model.[0].name}}</a>
+      </h4>
+      <p>ENDEREÇO {{model.[0].location.address}}<a target="_blank" href=""></a>.</p>
+      <p>{{model.[0].description}}</p>
+      <h3>{{model.[0].rooms.[0].category}}</h3>
+      <p>{{model.[0].rooms.[0].group}}</p>
+      <p>{{model.[0].rooms.[0].mealPlan}}</p>
+      <p>{{model.[0].rooms.[0].rates.[0].contents.[0].items.[0].description}}</p>
+      <small>Quantidade de vagas {{model.[0].rooms.[0].quantityAvailable}}</small>
+    </div>
+      <div class="ratings">
+        <p class="pull-right">3 reviews</p>
+        <p>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star"></span>
+          <span class="glyphicon glyphicon-star-empty"></span>
+          4.0 stars
+        </p>
+      </div>
+    </div>
+</div>
+<div class="well">
+  <div class="row">
+      <div class="col-md-12">
+          <h3><a>Tabela de Preços</a></h3>
+          <ul class="list-group">
+            <li class=="list-group-item"><h4>Preço por dia com imposto R$ {{model.[0].rooms.[0].rates.[0].pricePerDayWithTax}}</h4></li>
+            <li class=="list-group-item"><h4>Preço por dia sem imposto R$ {{model.[0].rooms.[0].rates.[0].pricePerDayWithoutTax}}</h4></li>
+            <li class=="list-group-item"><h4>Preço com imposto R$ {{model.[0].rooms.[0].rates.[0].priceWithTax}}</h4></li>
+            <li class=="list-group-item"><h4>Preço sem imposto R$ {{model.[0].rooms.[0].rates.[0].priceWithoutTax}}</h4></li>
+          </ul>
+      </div>
+  </div>
+  <div class="text-right">
+      <a class="btn btn-success">Agendar</a>
+  </div>
+</div>

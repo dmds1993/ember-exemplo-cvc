@@ -1,0 +1,83 @@
+@import "bootstrap";
+
+body {
+  overflow: auto;
+}
+
+.type-title {
+  margin-top: 100px;
+}
+
+.accommodation-body {
+  margin-top: 70px;
+}
+
+.accommodation-list {
+  margin-top: 100px;
+}
+
+.title-about {
+  margin-top: 70px;
+}
+
+.hotel-description {
+  overflow: hidden;
+  height: 117px;
+  white-space: pre-line;
+  word-spacing: inherit;
+  text-align: justify;
+}
+
+.description-hotel {
+  left: 13%;
+  width: 77%;
+  overflow: auto;
+}
+
+.item-service {
+  width: 50%;
+  text-align: justify;
+}
+
+.item-service h4 a{
+  margin-left: 15px;
+}
+
+
+.hotel-select {
+  margin-top: 0%;
+  margin-left: 14%;
+}
+.titulo-hotel-selecionado {
+  margin-top: 7%;
+  text-align: center;
+}
+
+.titulo-hotel-selecionado p{
+  text-align: justify;
+  margin-left: 20px;
+  line-height: 1.5;
+  text-indent: 1.3em;
+  margin-right: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.image-hotels > img, .image-hotels a > img {
+    width: 349px;
+    height: 200px;
+}
+
+li {
+  list-style: none;
+}
+
+.caret {
+  display: none;
+}
+
+.image-detail-hotel > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  height: 428px;
+}

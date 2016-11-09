@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/broccoli_merge_trees-input_base_path-xSwu2UZb.tmp/1/ember-example/templates/hotelselect.js

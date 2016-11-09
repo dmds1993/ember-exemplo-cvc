@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/funnel-input_base_path-WsBH8Kpd.tmp/0/initializer-factory.js

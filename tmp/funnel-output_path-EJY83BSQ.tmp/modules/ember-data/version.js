@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/creator-output_path-jFGyMMlx.tmp/version.js
