@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/config_replace-output_path-JFQGsE5c.tmp/tests-suffix.js

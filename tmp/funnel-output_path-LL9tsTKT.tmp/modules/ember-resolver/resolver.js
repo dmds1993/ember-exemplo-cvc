@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/funnel-input_base_path-ud6h38g8.tmp/0/resolver.js

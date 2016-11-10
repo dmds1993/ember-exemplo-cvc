@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="thumbnail titulo-hotel-selecionado">
+    <img class="img-responsive" src={{accomodation.[0].links.thumbnailImage.href}} alt="">
+    <div class="caption-full">
+      <h4 class="pull-right"></h4>
+        <h3><a href="#">{{accomodation.[0].name}}</a>
+      </h3>
+      <p>{{address}} {{accomodation.[0].location.address}}<a target="_blank" href=""></a>.</p>
+      <p>{{accomodation.[0].description}}</p>
+      <h4 class="category-hotel"><a>{{accomodation.[0].rooms.[0].category}}</a></h4>
+      <p>{{accomodation.[0].rooms.[0].group}}</p>
+      <p>{{accomodation.[0].rooms.[0].mealPlan}}</p>
+      <p>{{accomodation.[0].rooms.[0].rates.[0].contents.[0].items.[0].description}} horas.</p>
+      <small class="quantityAvailable">{{quantityAvailable}}: {{accomodation.[0].rooms.[0].quantityAvailable}}</small>
+    </div>
+  </div>
+</div>

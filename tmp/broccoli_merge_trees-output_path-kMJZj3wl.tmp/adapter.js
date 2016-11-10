@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/broccoli_merge_trees-input_base_path-Py1rjkTd.tmp/1/adapter.js

@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/funnel-input_base_path-7jK5IGSS.tmp/0/index.js

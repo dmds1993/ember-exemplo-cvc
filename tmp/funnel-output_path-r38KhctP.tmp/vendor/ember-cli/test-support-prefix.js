@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-example/tmp/funnel-input_base_path-RkvEG7F3.tmp/0//test-support-prefix.js
