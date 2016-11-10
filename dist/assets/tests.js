@@ -4,7 +4,7 @@ define('ember-example/tests/app.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | app.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'app.js should pass jshint.');
+    assert.ok(false, 'app.js should pass jshint.\napp.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 2, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 3, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 4, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\napp.js: line 6, col 1, \'let\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\napp.js: line 13, col 3, \'object short notation\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\napp.js: line 18, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n7 errors');
   });
 });
 define('ember-example/tests/components/accomodation-options.jshint', ['exports'], function (exports) {
@@ -13,7 +13,7 @@ define('ember-example/tests/components/accomodation-options.jshint', ['exports']
   QUnit.module('JSHint | components/accomodation-options.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/accomodation-options.js should pass jshint.');
+    assert.ok(false, 'components/accomodation-options.js should pass jshint.\ncomponents/accomodation-options.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/accomodation-options.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/components/detail-hotel-selected.jshint', ['exports'], function (exports) {
@@ -22,7 +22,7 @@ define('ember-example/tests/components/detail-hotel-selected.jshint', ['exports'
   QUnit.module('JSHint | components/detail-hotel-selected.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/detail-hotel-selected.js should pass jshint.');
+    assert.ok(false, 'components/detail-hotel-selected.js should pass jshint.\ncomponents/detail-hotel-selected.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/detail-hotel-selected.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/components/message-confirmation.jshint', ['exports'], function (exports) {
@@ -31,7 +31,7 @@ define('ember-example/tests/components/message-confirmation.jshint', ['exports']
   QUnit.module('JSHint | components/message-confirmation.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/message-confirmation.js should pass jshint.');
+    assert.ok(false, 'components/message-confirmation.js should pass jshint.\ncomponents/message-confirmation.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/message-confirmation.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/components/modal-reserva.jshint', ['exports'], function (exports) {
@@ -40,7 +40,7 @@ define('ember-example/tests/components/modal-reserva.jshint', ['exports'], funct
   QUnit.module('JSHint | components/modal-reserva.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/modal-reserva.js should pass jshint.');
+    assert.ok(false, 'components/modal-reserva.js should pass jshint.\ncomponents/modal-reserva.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/modal-reserva.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/components/nav-link-to.jshint', ['exports'], function (exports) {
@@ -49,7 +49,7 @@ define('ember-example/tests/components/nav-link-to.jshint', ['exports'], functio
   QUnit.module('JSHint | components/nav-link-to.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/nav-link-to.js should pass jshint.');
+    assert.ok(false, 'components/nav-link-to.js should pass jshint.\ncomponents/nav-link-to.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/nav-link-to.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/components/spinner-airplane.jshint', ['exports'], function (exports) {
@@ -58,7 +58,7 @@ define('ember-example/tests/components/spinner-airplane.jshint', ['exports'], fu
   QUnit.module('JSHint | components/spinner-airplane.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'components/spinner-airplane.js should pass jshint.');
+    assert.ok(false, 'components/spinner-airplane.js should pass jshint.\ncomponents/spinner-airplane.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\ncomponents/spinner-airplane.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
@@ -1145,7 +1145,7 @@ define('ember-example/tests/resolver.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | resolver.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'resolver.js should pass jshint.');
+    assert.ok(false, 'resolver.js should pass jshint.\nresolver.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nresolver.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/router.jshint', ['exports'], function (exports) {
@@ -1154,7 +1154,7 @@ define('ember-example/tests/router.jshint', ['exports'], function (exports) {
   QUnit.module('JSHint | router.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'router.js should pass jshint.');
+    assert.ok(false, 'router.js should pass jshint.\nrouter.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nrouter.js: line 2, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nrouter.js: line 4, col 1, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nrouter.js: line 15, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n4 errors');
   });
 });
 define('ember-example/tests/routes/confirmation.jshint', ['exports'], function (exports) {
@@ -1163,7 +1163,7 @@ define('ember-example/tests/routes/confirmation.jshint', ['exports'], function (
   QUnit.module('JSHint | routes/confirmation.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(true, 'routes/confirmation.js should pass jshint.');
+    assert.ok(false, 'routes/confirmation.js should pass jshint.\nroutes/confirmation.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/confirmation.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
   });
 });
 define('ember-example/tests/routes/hotelselect.jshint', ['exports'], function (exports) {
@@ -1172,7 +1172,7 @@ define('ember-example/tests/routes/hotelselect.jshint', ['exports'], function (e
   QUnit.module('JSHint | routes/hotelselect.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/hotelselect.js should pass jshint.\nroutes/hotelselect.js: line 5, col 30, Missing semicolon.\nroutes/hotelselect.js: line 10, col 86, Missing semicolon.\nroutes/hotelselect.js: line 17, col 7, Missing semicolon.\nroutes/hotelselect.js: line 14, col 11, \'reject\' is not defined.\n\n4 errors');
+    assert.ok(false, 'routes/hotelselect.js should pass jshint.\nroutes/hotelselect.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/hotelselect.js: line 5, col 5, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/hotelselect.js: line 5, col 30, Missing semicolon.\nroutes/hotelselect.js: line 6, col 5, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/hotelselect.js: line 6, col 25, \'template literal syntax\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 7, col 43, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 9, col 27, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 10, col 11, \'let\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/hotelselect.js: line 10, col 60, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 10, col 86, Missing semicolon.\nroutes/hotelselect.js: line 13, col 23, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/hotelselect.js: line 17, col 7, Missing semicolon.\n\n14 errors');
   });
 });
 define('ember-example/tests/routes/index.jshint', ['exports'], function (exports) {
@@ -1181,7 +1181,7 @@ define('ember-example/tests/routes/index.jshint', ['exports'], function (exports
   QUnit.module('JSHint | routes/index.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/index.js should pass jshint.\nroutes/index.js: line 5, col 16, Missing semicolon.\n\n1 error');
+    assert.ok(false, 'routes/index.js should pass jshint.\nroutes/index.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/index.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/index.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/index.js: line 5, col 16, Missing semicolon.\n\n4 errors');
   });
 });
 define('ember-example/tests/routes/services.jshint', ['exports'], function (exports) {
@@ -1190,7 +1190,7 @@ define('ember-example/tests/routes/services.jshint', ['exports'], function (expo
   QUnit.module('JSHint | routes/services.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/services.js should pass jshint.\nroutes/services.js: line 10, col 33, Missing semicolon.\nroutes/services.js: line 11, col 12, Missing semicolon.\n\n2 errors');
+    assert.ok(false, 'routes/services.js should pass jshint.\nroutes/services.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/services.js: line 5, col 5, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/services.js: line 6, col 43, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 7, col 24, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 9, col 24, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 10, col 33, Missing semicolon.\nroutes/services.js: line 11, col 12, Missing semicolon.\n\n9 errors');
   });
 });
 define('ember-example/tests/test-helper', ['exports', 'ember-example/tests/helpers/resolver', 'ember-qunit'], function (exports, _emberExampleTestsHelpersResolver, _emberQunit) {

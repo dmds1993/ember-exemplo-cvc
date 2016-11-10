@@ -579,6 +579,90 @@ define("ember-example/templates/components/accomodation-options", ["exports"], f
           templates: []
         };
       })();
+      var child1 = (function () {
+        return {
+          meta: {
+            "revision": "Ember@2.9.1",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 13,
+                "column": 10
+              },
+              "end": {
+                "line": 15,
+                "column": 14
+              }
+            },
+            "moduleName": "ember-example/templates/components/accomodation-options.hbs"
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createTextNode("              ");
+            dom.appendChild(el0, el1);
+            var el1 = dom.createElement("p");
+            dom.setAttribute(el1, "class", "quantity-available-status");
+            var el2 = dom.createTextNode("Disponível");
+            dom.appendChild(el1, el2);
+            dom.appendChild(el0, el1);
+            var el1 = dom.createTextNode("\n");
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes() {
+            return [];
+          },
+          statements: [],
+          locals: [],
+          templates: []
+        };
+      })();
+      var child2 = (function () {
+        return {
+          meta: {
+            "revision": "Ember@2.9.1",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 15,
+                "column": 14
+              },
+              "end": {
+                "line": 19,
+                "column": 10
+              }
+            },
+            "moduleName": "ember-example/templates/components/accomodation-options.hbs"
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createTextNode("            ");
+            dom.appendChild(el0, el1);
+            var el1 = dom.createElement("p");
+            dom.setAttribute(el1, "class", "quantity-available-status");
+            var el2 = dom.createTextNode("\n              Indisponível\n            ");
+            dom.appendChild(el1, el2);
+            dom.appendChild(el0, el1);
+            var el1 = dom.createTextNode("\n");
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes() {
+            return [];
+          },
+          statements: [],
+          locals: [],
+          templates: []
+        };
+      })();
       return {
         meta: {
           "revision": "Ember@2.9.1",
@@ -646,45 +730,20 @@ define("ember-example/templates/components/accomodation-options", ["exports"], f
           dom.appendChild(el2, el3);
           var el3 = dom.createElement("div");
           dom.setAttribute(el3, "class", "ratings");
-          var el4 = dom.createTextNode("\n        ");
+          var el4 = dom.createTextNode("\n          ");
           dom.appendChild(el3, el4);
           var el4 = dom.createElement("p");
-          dom.setAttribute(el4, "class", "pull-right");
-          var el5 = dom.createTextNode("15 reviews");
+          dom.setAttribute(el4, "class", "pull-right quantity-available");
+          var el5 = dom.createTextNode("Quantidade de vagas: ");
+          dom.appendChild(el4, el5);
+          var el5 = dom.createComment("");
           dom.appendChild(el4, el5);
           dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode("\n        ");
+          var el4 = dom.createTextNode("\n");
           dom.appendChild(el3, el4);
-          var el4 = dom.createElement("p");
-          var el5 = dom.createTextNode("\n          ");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createElement("span");
-          dom.setAttribute(el5, "class", "glyphicon glyphicon-star");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n          ");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createElement("span");
-          dom.setAttribute(el5, "class", "glyphicon glyphicon-star");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n          ");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createElement("span");
-          dom.setAttribute(el5, "class", "glyphicon glyphicon-star");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n          ");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createElement("span");
-          dom.setAttribute(el5, "class", "glyphicon glyphicon-star");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n          ");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createElement("span");
-          dom.setAttribute(el5, "class", "glyphicon glyphicon-star");
-          dom.appendChild(el4, el5);
-          var el5 = dom.createTextNode("\n        ");
-          dom.appendChild(el4, el5);
+          var el4 = dom.createComment("");
           dom.appendChild(el3, el4);
-          var el4 = dom.createTextNode("\n      ");
+          var el4 = dom.createTextNode("      ");
           dom.appendChild(el3, el4);
           dom.appendChild(el2, el3);
           var el3 = dom.createTextNode("\n    ");
@@ -701,15 +760,18 @@ define("ember-example/templates/components/accomodation-options", ["exports"], f
           var element0 = dom.childAt(fragment, [1, 1]);
           var element1 = dom.childAt(element0, [1]);
           var element2 = dom.childAt(element0, [3]);
-          var morphs = new Array(3);
+          var element3 = dom.childAt(element0, [5]);
+          var morphs = new Array(5);
           morphs[0] = dom.createAttrMorph(element1, 'src');
           morphs[1] = dom.createMorphAt(dom.childAt(element2, [3]), 0, 0);
           morphs[2] = dom.createMorphAt(dom.childAt(element2, [5]), 0, 0);
+          morphs[3] = dom.createMorphAt(dom.childAt(element3, [1]), 1, 1);
+          morphs[4] = dom.createMorphAt(element3, 3, 3);
           return morphs;
         },
-        statements: [["attribute", "src", ["get", "hotel.links.thumbnailImage.href", ["loc", [null, [4, 17], [4, 48]]], 0, 0, 0, 0], 0, 0, 0, 0], ["block", "link-to", ["hotelselect", ["get", "hotel.id", ["loc", [null, [7, 56], [7, 64]]], 0, 0, 0, 0]], ["tagName", "li"], 0, null, ["loc", [null, [7, 31], [7, 120]]]], ["content", "hotel.description", ["loc", [null, [9, 37], [9, 58]]], 0, 0, 0, 0]],
+        statements: [["attribute", "src", ["get", "hotel.links.thumbnailImage.href", ["loc", [null, [4, 17], [4, 48]]], 0, 0, 0, 0], 0, 0, 0, 0], ["block", "link-to", ["hotelselect", ["get", "hotel.id", ["loc", [null, [7, 56], [7, 64]]], 0, 0, 0, 0]], ["tagName", "li"], 0, null, ["loc", [null, [7, 31], [7, 120]]]], ["content", "hotel.description", ["loc", [null, [9, 37], [9, 58]]], 0, 0, 0, 0], ["content", "hotel.rooms.0.quantityAvailable", ["loc", [null, [12, 72], [12, 109]]], 0, 0, 0, 0], ["block", "if", [["get", "hotel.rooms.0.isAvailable", ["loc", [null, [13, 16], [13, 43]]], 0, 0, 0, 0]], [], 1, 2, ["loc", [null, [13, 10], [19, 17]]]]],
         locals: ["hotel"],
-        templates: [child0]
+        templates: [child0, child1, child2]
       };
     })();
     return {
@@ -1863,7 +1925,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-example/app")["default"].create({"name":"ember-example","version":"0.0.0+0e78dac6"});
+  require("ember-example/app")["default"].create({"name":"ember-example","version":"0.0.0+9bab42a2"});
 }
 
 /* jshint ignore:end */

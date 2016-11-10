@@ -5818,6 +5818,12 @@ button.close {
 body {
   overflow: auto; }
 
+p.quantity-available-status {
+  margin-left: 10px; }
+
+p.pull-right.quantity-available {
+  margin-right: 15px; }
+
 .spinner-sclase {
   transform: scale(0.3);
   position: absolute;

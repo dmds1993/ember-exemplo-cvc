@@ -9,14 +9,14 @@
         <p class="hotel-description">{{hotel.description}}</p>
       </div>
       <div class="ratings">
-        <p class="pull-right">15 reviews</p>
-        <p>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-          <span class="glyphicon glyphicon-star"></span>
-        </p>
+          <p class="pull-right quantity-available">Quantidade de vagas: {{hotel.rooms.[0].quantityAvailable}}</p>
+          {{#if hotel.rooms.[0].isAvailable}}
+              <p class="quantity-available-status">Disponível</p>
+              {{else}}
+            <p class="quantity-available-status">
+              Indisponível
+            </p>
+          {{/if}}
       </div>
     </div>
   </div>
