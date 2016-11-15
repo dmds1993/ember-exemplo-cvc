@@ -6,6 +6,19 @@
 
 /* jshint ignore:end */
 
+define('ember-example/adapters/service', ['exports', 'ember-example/adapters/typicode'], function (exports, _emberExampleAdaptersTypicode) {
+  exports['default'] = _emberExampleAdaptersTypicode['default'].extend({
+    // namespace: api/v1/users/
+    pathForType: function pathForType() {
+      return 'hotels';
+    }
+  });
+});
+define('ember-example/adapters/typicode', ['exports', 'ember-data'], function (exports, _emberData) {
+  exports['default'] = _emberData['default'].RESTAdapter.extend({
+    host: 'http://ec2-52-45-26-25.compute-1.amazonaws.com:5050/dev'
+  });
+});
 define('ember-example/app', ['exports', 'ember', 'ember-example/resolver', 'ember-load-initializers', 'ember-example/config/environment'], function (exports, _ember, _emberExampleResolver, _emberLoadInitializers, _emberExampleConfigEnvironment) {
 
   var App = undefined;
@@ -239,6 +252,19 @@ define("ember-example/instance-initializers/ember-data", ["exports", "ember-data
     initialize: _emberDataPrivateInstanceInitializersInitializeStoreService["default"]
   };
 });
+define('ember-example/models/service', ['exports', 'ember-data'], function (exports, _emberData) {
+    var attr = _emberData['default'].attr;
+    var belongsTo = _emberData['default'].belongsTo;
+    exports['default'] = _emberData['default'].Model.extend({
+        hotelId: belongsTo('id'),
+        description: attr('string'),
+        priority: attr('string'),
+        name: attr('string'),
+        links: attr(),
+        rooms: attr(),
+        body: attr('string')
+    });
+});
 define('ember-example/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   exports['default'] = _emberResolver['default'];
 });
@@ -291,16 +317,17 @@ define('ember-example/routes/index', ['exports', 'ember'], function (exports, _e
   });
 });
 define('ember-example/routes/services', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Route.extend({
-    model: function model() {
-      var hotels = 'http://ec2-52-45-26-25.compute-1.amazonaws.com:5050/dev/hotels';
-      return new _ember['default'].RSVP.Promise(function (resolve) {
-        _ember['default'].run.later(function () {
-          resolve(fetch(hotels).then(function (response) {
-            return response.json();
-          }));
-        });
-      });
+    exports['default'] = _ember['default'].Route.extend({
+        model: function model() {
+            return this.store.findAll('service');
+        }
+    });
+});
+define('ember-example/serializers/service', ['exports', 'ember-data'], function (exports, _emberData) {
+  exports['default'] = _emberData['default'].RESTSerializer.extend({
+    normalizeResponse: function normalizeResponse(store, primaryModelClass, payload, id, requestType) {
+      payload = { service: payload.hotels };
+      return this._super(store, primaryModelClass, payload, id, requestType);
     }
   });
 });
@@ -807,7 +834,7 @@ define("ember-example/templates/components/accomodation-options", ["exports"], f
         dom.insertBoundary(fragment, null);
         return morphs;
       },
-      statements: [["block", "each", [["get", "accommodation.hotels", ["loc", [null, [1, 8], [1, 28]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [1, 0], [23, 9]]]]],
+      statements: [["block", "each", [["get", "accommodation", ["loc", [null, [1, 8], [1, 21]]], 0, 0, 0, 0]], [], 0, null, ["loc", [null, [1, 0], [23, 9]]]]],
       locals: [],
       templates: [child0]
     };
@@ -1868,7 +1895,7 @@ define("ember-example/templates/services", ["exports"], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createElement("div");
         dom.setAttribute(el2, "class", "row");
-        var el3 = dom.createTextNode("\n      ");
+        var el3 = dom.createTextNode("\n     ");
         dom.appendChild(el2, el3);
         var el3 = dom.createComment("");
         dom.appendChild(el2, el3);
@@ -1887,7 +1914,7 @@ define("ember-example/templates/services", ["exports"], function (exports) {
         morphs[0] = dom.createMorphAt(dom.childAt(fragment, [0, 1]), 1, 1);
         return morphs;
       },
-      statements: [["inline", "partial", ["accommodation"], [], ["loc", [null, [3, 6], [3, 33]]], 0, 0]],
+      statements: [["inline", "partial", ["accommodation"], [], ["loc", [null, [3, 5], [3, 32]]], 0, 0]],
       locals: [],
       templates: []
     };
@@ -1925,7 +1952,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-example/app")["default"].create({"name":"ember-example","version":"0.0.0+9bab42a2"});
+  require("ember-example/app")["default"].create({"name":"ember-example","version":"0.0.0+31fcdf1c"});
 }
 
 /* jshint ignore:end */

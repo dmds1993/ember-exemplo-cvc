@@ -1,3 +1,21 @@
+define('ember-example/tests/adapters/service.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | adapters/service.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'adapters/service.js should pass jshint.\nadapters/service.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nadapters/service.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nadapters/service.js: line 5, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nadapters/service.js: line 6, col 20, Missing semicolon.\n\n4 errors');
+  });
+});
+define('ember-example/tests/adapters/typicode.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | adapters/typicode.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'adapters/typicode.js should pass jshint.\nadapters/typicode.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nadapters/typicode.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n2 errors');
+  });
+});
 define('ember-example/tests/app.jshint', ['exports'], function (exports) {
   'use strict';
 
@@ -1139,6 +1157,15 @@ define('ember-example/tests/integration/components/spinner-airplane-test.jshint'
     assert.ok(true, 'integration/components/spinner-airplane-test.js should pass jshint.');
   });
 });
+define('ember-example/tests/models/service.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | models/service.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'models/service.js should pass jshint.\nmodels/service.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nmodels/service.js: line 3, col 1, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nmodels/service.js: line 3, col 1, \'destructuring binding\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nmodels/service.js: line 8, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\n\n4 errors');
+  });
+});
 define('ember-example/tests/resolver.jshint', ['exports'], function (exports) {
   'use strict';
 
@@ -1190,7 +1217,16 @@ define('ember-example/tests/routes/services.jshint', ['exports'], function (expo
   QUnit.module('JSHint | routes/services.js');
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/services.js should pass jshint.\nroutes/services.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/services.js: line 5, col 5, \'const\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/services.js: line 6, col 43, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 7, col 24, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 9, col 24, \'arrow function syntax (=>)\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 10, col 33, Missing semicolon.\nroutes/services.js: line 11, col 12, Missing semicolon.\n\n9 errors');
+    assert.ok(false, 'routes/services.js should pass jshint.\nroutes/services.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nroutes/services.js: line 4, col 5, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\nroutes/services.js: line 5, col 45, Missing semicolon.\n\n4 errors');
+  });
+});
+define('ember-example/tests/serializers/service.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | serializers/service.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(false, 'serializers/service.js should pass jshint.\nserializers/service.js: line 1, col 1, \'import\' is only available in ES6 (use \'esversion: 6\').\nserializers/service.js: line 3, col 1, \'export\' is only available in ES6 (use \'esversion: 6\').\nserializers/service.js: line 4, col 3, \'concise methods\' is available in ES6 (use \'esversion: 6\') or Mozilla JS extensions (use moz).\n\n3 errors');
   });
 });
 define('ember-example/tests/test-helper', ['exports', 'ember-example/tests/helpers/resolver', 'ember-qunit'], function (exports, _emberExampleTestsHelpersResolver, _emberQunit) {
@@ -1204,6 +1240,72 @@ define('ember-example/tests/test-helper.jshint', ['exports'], function (exports)
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'test-helper.js should pass jshint.');
+  });
+});
+define('ember-example/tests/unit/adapters/service-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleFor)('adapter:service', 'Unit | Adapter | service', {
+    // Specify the other units that are required for this test.
+    // needs: ['serializer:foo']
+  });
+
+  // Replace this with your real tests.
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var adapter = this.subject();
+    assert.ok(adapter);
+  });
+});
+define('ember-example/tests/unit/adapters/service-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/adapters/service-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/adapters/service-test.js should pass jshint.');
+  });
+});
+define('ember-example/tests/unit/models/service-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForModel)('service', 'Unit | Model | service', {
+    // Specify the other units that are required for this test.
+    needs: []
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var model = this.subject();
+    // let store = this.store();
+    assert.ok(!!model);
+  });
+});
+define('ember-example/tests/unit/models/service-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/models/service-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/models/service-test.js should pass jshint.');
+  });
+});
+define('ember-example/tests/unit/models/services-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForModel)('services', 'Unit | Model | services', {
+    // Specify the other units that are required for this test.
+    needs: []
+  });
+
+  (0, _emberQunit.test)('it exists', function (assert) {
+    var model = this.subject();
+    // let store = this.store();
+    assert.ok(!!model);
+  });
+});
+define('ember-example/tests/unit/models/services-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/models/services-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/models/services-test.js should pass jshint.');
   });
 });
 define('ember-example/tests/unit/routes/about-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
@@ -1330,6 +1432,31 @@ define('ember-example/tests/unit/routes/services-test.jshint', ['exports'], func
   QUnit.test('should pass jshint', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/services-test.js should pass jshint.');
+  });
+});
+define('ember-example/tests/unit/serializers/service-test', ['exports', 'ember-qunit'], function (exports, _emberQunit) {
+
+  (0, _emberQunit.moduleForModel)('service', 'Unit | Serializer | service', {
+    // Specify the other units that are required for this test.
+    needs: ['serializer:service']
+  });
+
+  // Replace this with your real tests.
+  (0, _emberQunit.test)('it serializes records', function (assert) {
+    var record = this.subject();
+
+    var serializedRecord = record.serialize();
+
+    assert.ok(serializedRecord);
+  });
+});
+define('ember-example/tests/unit/serializers/service-test.jshint', ['exports'], function (exports) {
+  'use strict';
+
+  QUnit.module('JSHint | unit/serializers/service-test.js');
+  QUnit.test('should pass jshint', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/serializers/service-test.js should pass jshint.');
   });
 });
 /* jshint ignore:start */
