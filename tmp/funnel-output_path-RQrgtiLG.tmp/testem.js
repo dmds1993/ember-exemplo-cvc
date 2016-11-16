@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-exemplo-cvc/tmp/funnel-input_base_path-1lY326Rg.tmp/0//testem.js

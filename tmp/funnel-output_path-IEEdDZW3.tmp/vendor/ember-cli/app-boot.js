@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-exemplo-cvc/tmp/funnel-input_base_path-LjmvNArp.tmp/0//app-boot.js

@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-exemplo-cvc/tmp/funnel-input_base_path-45QKZDYA.tmp/0/components/spin-spinner.js

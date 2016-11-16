@@ -8,8 +8,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('services');
-  this.route('hotelselect', { path: '/:id' });
-  this.route('confirmation', { path: '/:id/rooms/:rateToken' });
+  this.route('hotelselect', { path: '/:id/rooms/:rateToken' });
+  this.route('confirmation');
 });
 
 export default Router;

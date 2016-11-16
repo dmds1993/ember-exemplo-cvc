@@ -1,14 +1,14 @@
-{{#if model.[0].links.thumbnailImage.href}}
+{{#if model}}
 {{detail-hotel-selected address="ENDEREÇO" quantityAvailable="Quantidade de vagas" accomodation=model}}
   <div class="well">
     <div class="row">
         <div class="col-md-12">
-            <h3><a>Tabela de Preços</a></h3>
+            <h3><a>Tabela de Preços  Grupo {{model.rates.[0].packageGroup}}</a></h3>
             <ul class="list-group">
-              <li class=="list-group-item"><h4>Preço por dia com imposto R$ {{model.[0].rooms.[0].rates.[0].pricePerDayWithTax}}</h4></li>
-              <li class=="list-group-item"><h4>Preço por dia sem imposto R$ {{model.[0].rooms.[0].rates.[0].pricePerDayWithoutTax}}</h4></li>
-              <li class=="list-group-item"><h4>Preço com imposto R$ {{model.[0].rooms.[0].rates.[0].priceWithTax}}</h4></li>
-              <li class=="list-group-item"><h4>Preço sem imposto R$ {{model.[0].rooms.[0].rates.[0].priceWithoutTax}}</h4></li>
+              <li class=="list-group-item"><h4>Preço por dia com imposto R$ {{model.rates.[0].pricePerDayWithTax}}</h4></li>
+              <li class=="list-group-item"><h4>Preço por dia sem imposto R$ {{model.rates.[0].pricePerDayWithoutTax}}</h4></li>
+              <li class=="list-group-item"><h4>Preço com imposto R$ {{model.rates.[0].priceWithTax}}</h4></li>
+              <li class=="list-group-item"><h4>Preço sem imposto R$ {{model.rates.[0].priceWithoutTax}}</h4></li>
             </ul>
         </div>
     </div>
@@ -16,7 +16,7 @@
         <button type="button" class="btn btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Faça sua reserva</button>
     </div>
   </div>
-  {{modal-reserva hotel=model}}
+  {{modal-reserva}}
   {{else}}
   {{spinner-airplane}}
 {{/if}}

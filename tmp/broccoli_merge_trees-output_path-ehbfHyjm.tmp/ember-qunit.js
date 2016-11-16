@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-exemplo-cvc/node_modules/ember-qunit/lib/ember-qunit.js

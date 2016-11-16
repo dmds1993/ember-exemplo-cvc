@@ -1,0 +1,1 @@
+/home/daniel/Documents/dev2/ember-exemplo-cvc/tmp/broccoli_merge_trees-input_base_path-J3PPfQlA.tmp/1/assets/test-support.js

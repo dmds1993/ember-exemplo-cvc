@@ -1,17 +1,21 @@
 <div class="row">
   <div class="thumbnail titulo-hotel-selecionado">
-    <img class="img-responsive" src={{accomodation.[0].links.thumbnailImage.href}} alt="">
     <div class="caption-full">
       <h4 class="pull-right"></h4>
-        <h3><a href="#">{{accomodation.[0].name}}</a>
+        <h3><a href="#">{{accomodation.category}}</a>
       </h3>
-      <p>{{address}} {{accomodation.[0].location.address}}<a target="_blank" href=""></a>.</p>
-      <p>{{accomodation.[0].description}}</p>
-      <h4 class="category-hotel"><a>{{accomodation.[0].rooms.[0].category}}</a></h4>
-      <p>{{accomodation.[0].rooms.[0].group}}</p>
-      <p>{{accomodation.[0].rooms.[0].mealPlan}}</p>
-      <p>{{accomodation.[0].rooms.[0].rates.[0].contents.[0].items.[0].description}} horas.</p>
-      <small class="quantityAvailable">{{quantityAvailable}}: {{accomodation.[0].rooms.[0].quantityAvailable}}</small>
+      <h3><a>Itens incluidos Grupo {{accomodation.rates.[0].packageGroup}}</a></h3>
+      <ul class="list-group">
+        {{#each accomodation.rates.[0].contents as |content|}}
+            <li class=="list-group-item"><h4>{{content.description}}</h4></li>
+        {{/each}}
+        {{#each accomodation.rates.[0].contents.[0].items as |intem|}}
+            <li class=="list-group-item"><h4>{{intem.description}}</h4></li>
+        {{/each}}
+      </ul>
+      <small>{{accomodation.mealPlan}} Quantidade de vagas: {{accomodation.quantityAvailable}}<a target="_blank" href=""></a></small>
     </div>
   </div>
 </div>
+
+<h2>{{accomodation.name}}</h2>
